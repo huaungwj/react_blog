@@ -2,7 +2,11 @@ React + Next 博客系统
 
 > 该项目是由 `React` 和 `Next` 搭建
 
-> 另外该项目的后台系统在： https://github.com/huaungwj/react_blog_admin
+> 博客后台管理： https://github.com/huaungwj/react_blog_admin
+
+> api接口：https://github.com/huaungwj/react_blog_api
+
+如果觉得对您有帮助，您可以在右上角给我个star支持一下，谢谢！
 
 ## 页面预览
 
