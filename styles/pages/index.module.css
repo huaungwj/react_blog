@@ -1,0 +1,19 @@
+.listTitle {
+    font-size: 1.3rem;
+    color: #1e90ff;
+    padding: 0 0.5rem;
+}
+.listContext {
+    color: #999;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+.listIcon {
+    padding: 0.5rem 0;
+    color: #AAA;
+}
+.listIcon span {
+    display: inline-block;
+    padding: 0 10px;
+}
