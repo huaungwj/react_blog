@@ -1,0 +1,286 @@
+.my-introduce,
+.my-education,
+.my-introduction,
+.my-experience {
+  border-radius: 8px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 8px solid #fff;
+}
+
+.my-introduce {
+  background: linear-gradient(#e3f2fd, #bbdefb);
+  position: relative;
+  overflow: hidden;
+}
+
+.my-introduce .my-cylinder div {
+  width: calc((var(--b)) * 20px);
+  height: 300px;
+  position: absolute;
+  background-color: aqua;
+  border-radius: 100px;
+  top: -50px;
+  right: calc(var(--a) * 10px);
+  transform: rotateZ(220deg) translate(0, 0);
+}
+
+.my-introduce:hover .my-cylinder div {
+  transition: 0.5s calc(var(--c) * 0.5s);
+  transform: rotateZ(220deg) translate(-200px, 400px);
+}
+
+.my-education {
+  background-color: #b2ebf2;
+  position: relative;
+  opacity: 0.9;
+}
+
+.my-introduction {
+  background-color: #c8e6c9;
+  position: relative;
+  opacity: 0.9;
+}
+
+.introduction-left-item {
+  z-index: -1;
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  background: #d8d2b0;
+  box-shadow: inset 20px 20px 55px #b5b094, inset -20px -20px 55px #fbf4cc;
+  top: 45%;
+  left: 20%;
+  animation: introduction-left 5s linear infinite;
+  -webkit-animation: introduction-left 5s linear infinite;
+  -moz-animation: introduction-left 5s linear infinite;
+  -ms-animation: introduction-left 5s linear infinite;
+}
+
+@keyframes introduction-left {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.my-experience {
+  background-color: #f0f4c3;
+  position: relative;
+  opacity: 0.8;
+}
+
+.my-introduce:hover,
+.my-education:hover,
+.my-introduction:hover,
+.my-experience:hover {
+  transform: scale(1.01);
+  z-index: 0;
+  /* animation: itemMove 0.5s forwards ease-in-out; */
+}
+
+@keyframes itemMove {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+.my-resume-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 20px;
+  margin-left: 6px;
+  position: relative;
+}
+
+.my-resume-title::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-top-left-radius: 10px;
+  border-bottom: 10px solid transparent;
+  border-bottom-left-radius: 10px;
+  border-left: 15px solid rgb(122, 209, 136);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.my-introduce ul,
+.my-education ul,
+.my-introduction ul {
+  margin: 0;
+}
+
+.my-introduce li,
+.my-education li,
+.my-introduction li,
+.experience-content {
+  list-style: none;
+  font-size: 20px;
+  font-family: Helvetica;
+}
+
+.my-experience li {
+}
+
+.my-introduce .my-name,
+.my-phone,
+.my-WeChat,
+.my-email,
+.my-occupation {
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  margin: 4px;
+  background-color: #fff;
+  border-radius: 6px;
+  z-index: 999;
+}
+
+.my-name {
+  background: linear-gradient(145deg, #c5f6fa, #99e9f2);
+  box-shadow: 3px 3px 6px #e3fafc, -3px -3px 6px #e3fafc, -3px 3px 6px #e3fafc, 3px -3px 6px #e3fafc;
+}
+
+.my-occupation {
+  background: linear-gradient(145deg, #c3fae8, #96f2d7);
+  box-shadow: 3px 3px 6px #e3fcf5, -3px -3px 6px #e3fcf5, -3px 3px 6px #e3fcf5, 3px -3px 6px #e6fcf5;
+}
+
+.my-WeChat {
+  background: linear-gradient(145deg, #d3f9d8, #b2f2bb);
+  box-shadow: 3px 3px 6px #ebfbee, -3px -3px 6px #ebfbee, -3px 3px 6px #ebfbee, 3px -3px 6px #ebfbee;
+}
+
+.my-phone {
+  background: linear-gradient(145deg, #e9fac8, #d8f5a2);
+  box-shadow: 3px 3px 6px #f4fce3, -3px -3px 6px #f4fce3, -3px 3px 6px #f4fce3, 3px -3px 6px #f4fce3;
+}
+
+.my-email {
+  background: linear-gradient(145deg, #fff3bf, #ffe066);
+  box-shadow: 3px 3px 6px #fff9db, -3px -3px 6px #fff9db, -3px 3px 6px #fff9db, 3px -3px 6px #fff9db;
+}
+
+.my-introduce .my-name,
+.my-phone,
+.my-email,
+.my-WeChat,
+.my-occupation {
+  cursor: pointer;
+  animation: myName 2s forwards calc(var(--i) * 1s) ease-in-out;
+  -webkit-animation: myName 2s forwards calc(var(--i) * 1s) ease-in-out;
+  -moz-animation: myName 2s forwards calc(var(--i) * 1s) ease-in-out;
+  -ms-animation: myName 2s forwards calc(var(--i) * 1s) ease-in-out;
+}
+
+@keyframes myName {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.my-experience .experience-content {
+  padding: 0 6px;
+}
+
+.my-experience .experience-content .experience-company {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6ee9c;
+  border-radius: 8px;
+  padding: 0 4px;
+  margin: 4px 0;
+}
+
+.schoolLogo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0 10px 10px;
+  }
+  .my-resume-title {
+    /* font-size: ; */
+  }
+  .my-introduce li,
+  .my-education li,
+  .my-introduction li,
+  .experience-content {
+    font-size: 14px;
+  }
+  ul {
+    padding-left: 15px;
+  }
+
+  .my-introduce .my-name,
+  .my-phone,
+  .my-WeChat,
+  .my-email,
+  .my-occupation {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin: 1px;
+  }
+
+  .experience-company {
+    flex-direction: column;
+  }
+}
+
+.text {
+  color: teal;
+  position: absolute;
+  animation: move 2s;
+}
+
+@keyframes move {
+  from {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+}
+
+#mycanvas {
+  position: fixed;
+  top: 0;
+  right: 30%;
+  z-index: 999;
+  transform-origin: 125px 0px;
+  animation: watch 5s infinite ease-in-out;
+}
+
+@keyframes watch {
+  0% {
+    transform: rotateZ(-20deg);
+  }
+  50% {
+    transform: rotateZ(20deg);
+  }
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8002",
+    "build": "next build",
+    "start": "next start -p 81"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^4.3.1",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
+    "classnames": "^2.2.6",
+    "dayjs": "^1.10.7",
+    "highlight": "^0.2.4",
+    "highlight.js": "^10.0.3",
+    "install": "^0.13.0",
+    "lodash": "^4.17.15",
+    "markdown-navbar": "^1.4.2",
+    "marked": "^3.0.0",
+    "next": "9.4.4",
+    "next-cookies": "^2.0.3",
+    "npm": "^8.3.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1",
+    "unmarked": "^0.0.12"
+  }
+}
